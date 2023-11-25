@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+*{
+    box-sizing: border-box;
+    color: $txt_color;
+
+    body{
+        margin: 0;
+        background-color: $bc_color;
+        letter-spacing: 1px;
+
+        a, a:active, a:visited{
+            color: $txt_color;
+            text-decoration: none;
+        }
+    }
+}
+
+.cardCoctail{
+    width: 300px;
+    margin: 5rem auto;
+    border: solid 2px $secondary_color;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    img{
+        width: 100%;
+    }
+
+    p{
+        margin: 1rem 0.5rem;
+    }
+
+    & + button{
+        margin: 0 0 0 5rem;
+    }
+}
